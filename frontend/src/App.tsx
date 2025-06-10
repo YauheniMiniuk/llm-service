@@ -123,7 +123,7 @@ export default function App() {
   }, [thread.messages, thread.isLoading, processedEventsTimeline]);
 
   const handleSubmit = useCallback(
-    (submittedInputValue: string, effort: string, model: string) => {
+    (submittedInputValue: string, model: string) => {
       if (!submittedInputValue.trim()) return;
       
       // Очищаем таймлайн для нового запуска
