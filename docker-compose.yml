@@ -46,3 +46,5 @@ services:
     depends_on:
       langgraph-api:
         condition: service_healthy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
