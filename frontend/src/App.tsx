@@ -25,7 +25,7 @@ export default function App() {
   }>({
     apiUrl: import.meta.env.DEV
       ? "http://localhost:2024"
-      : "http://localhost:8123", // production URL
+      : "/api", // production URL
     assistantId: "agent",
     messagesKey: "messages",
     onFinish: (event: any) => {
